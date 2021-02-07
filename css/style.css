@@ -40,5 +40,21 @@ header {
 
 .our_agency {
   padding: 50px 0 40px; }
+  .our_agency h3 {
+    font-size: 19px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+    display: inline-block; }
+  .our_agency p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 65px;
+    display: inline-block; }
+  .our_agency .progress {
+    margin-bottom: 4px;
+    border-radius: 3px; }
 
 /*# sourceMappingURL=style.css.map */

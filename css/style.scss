@@ -66,4 +66,26 @@ header {
 .our_agency {
   padding: 50px 0 40px;
 
+  h3{
+    font-size: 19px;
+    font-family: $font-main;
+    font-weight: 400;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  p{
+    font-family: $font-main;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 65px;
+    display: inline-block;
+  }
+
+  .progress{
+    margin-bottom: 4px;
+    border-radius: 3px;
+  }
+
 }
