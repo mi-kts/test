@@ -66,6 +66,13 @@ header {
 .our_agency {
   padding: 50px 0 40px;
 
+  .banner {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
   h3 {
     font-size: 19px;
     font-family: $font-main;
@@ -140,7 +147,7 @@ header {
   .member {
     margin-bottom: 40px;
 
-    img{
+    img {
       display: block;
       width: 100%;
       margin-bottom: 11px;
@@ -172,11 +179,61 @@ header {
       color: #666666;
       margin-bottom: 23px;
 
-      span{
+      span {
         color: #c3512f;
         font-weight: 600;
       }
     }
   }
+}
+
+
+.reviews {
+  background-color: #fcfcfc;
+  padding: 75px 0 100px;
+
+  h2 {
+    text-align: center;
+    font-family: $font-main;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 85px;
+    text-transform: uppercase;
+    font-size: 27px;
+  }
+
+  .review {
+    font-size: 13px;
+    font-family: $font-main;
+    padding: 20px 30px 25px 15px;
+
+    img{
+      display: block;
+      width: 80px;
+    }
+
+    p {
+      font-weight: 400;
+      color: #888888;
+      margin-bottom: 25px;
+    }
+
+    h4 {
+      font-weight: 600;
+      color: #444444;
+      margin-bottom: 25px;
+    }
+
+    h5 {
+      font-weight: 400;
+      color: #888888;
+
+      span {
+        color: #c15223;
+        font-weight: 600;
+      }
+    }
+  }
+
 }
 

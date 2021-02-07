@@ -40,6 +40,9 @@ header {
 
 .our_agency {
   padding: 50px 0 40px; }
+  .our_agency .banner img {
+    display: block;
+    width: 100%; }
   .our_agency h3 {
     font-size: 19px;
     font-family: "Open Sans", sans-serif;
@@ -115,5 +118,38 @@ header {
     .team .member p span {
       color: #c3512f;
       font-weight: 600; }
+
+.reviews {
+  background-color: #fcfcfc;
+  padding: 75px 0 100px; }
+  .reviews h2 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 85px;
+    text-transform: uppercase;
+    font-size: 27px; }
+  .reviews .review {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    padding: 20px 30px 25px 15px; }
+    .reviews .review img {
+      display: block;
+      width: 80px; }
+    .reviews .review p {
+      font-weight: 400;
+      color: #888888;
+      margin-bottom: 25px; }
+    .reviews .review h4 {
+      font-weight: 600;
+      color: #444444;
+      margin-bottom: 25px; }
+    .reviews .review h5 {
+      font-weight: 400;
+      color: #888888; }
+      .reviews .review h5 span {
+        color: #c15223;
+        font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */
