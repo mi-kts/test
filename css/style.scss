@@ -34,6 +34,11 @@ header {
     color: #888888;
     margin: 0;
     font-family: $font-main;
+
+    @media (max-width: 767px) {
+      display: block;
+      width: 100%;
+    }
   }
 
   nav {
@@ -205,32 +210,42 @@ header {
   .review {
     font-size: 13px;
     font-family: $font-main;
-    padding: 20px 30px 25px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-    img {
-      display: block;
-      width: 80px;
-    }
+    .review-content {
+      margin-left: 20px;
 
-    p {
-      font-weight: 400;
-      color: #888888;
-      margin-bottom: 25px;
-    }
+      img {
+        display: block;
+        width: 80px;
+      }
 
-    h4 {
-      font-weight: 600;
-      color: #444444;
-      margin-bottom: 25px;
-    }
+      p {
+        display: inline-block;
+        font-weight: 400;
+        color: #888888;
+        margin-bottom: 20px;
+      }
 
-    h5 {
-      font-weight: 400;
-      color: #888888;
-
-      span {
-        color: #c15223;
+      h4 {
         font-weight: 600;
+        color: #444444;
+        font-size: 13px;
+        margin-bottom: 13px;
+      }
+
+      h5 {
+        font-weight: 400;
+        color: #888888;
+        font-size: 13px;
+        margin: 0;
+
+        span {
+          color: #c15223;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -374,4 +389,81 @@ header {
     }
   }
 }
+
+footer {
+  background-color: #333333;
+  border: 1px solid #444444;
+  padding: 21px 0 24px;
+
+  p {
+    color: #fffefe;
+    font-size: 11px;
+    font-family: $font-main;
+    font-weight: 400;
+    margin: 0;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 19px;
+
+      @media (max-width: 767px) {
+        text-align: center;
+        display: block;
+        list-style: none;
+        margin-bottom: 5px;
+      }
+
+      a {
+        text-transform: capitalize;
+        color: #ffffff;
+        font-size: 11px;
+        font-family: $font-main;
+        font-weight: 400;
+        text-decoration: none;
+        position: relative;
+        transition: 0.3s;
+
+        &:hover {
+          color: darkgray;
+          text-decoration: none;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 10px;
+          right: -12px;
+          background-color: #444444;
+          position: absolute;
+          top: 4px;
+        }
+
+        @media (max-width: 767px) {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 

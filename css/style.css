@@ -21,6 +21,10 @@ header {
     color: #888888;
     margin: 0;
     font-family: "Open Sans", sans-serif; }
+    @media (max-width: 767px) {
+      .page-name h1 {
+        display: block;
+        width: 100%; } }
   .page-name nav {
     max-width: fit-content;
     display: flex;
@@ -133,24 +137,32 @@ header {
   .reviews .review {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
-    padding: 20px 30px 25px 15px; }
-    .reviews .review img {
-      display: block;
-      width: 80px; }
-    .reviews .review p {
-      font-weight: 400;
-      color: #888888;
-      margin-bottom: 25px; }
-    .reviews .review h4 {
-      font-weight: 600;
-      color: #444444;
-      margin-bottom: 25px; }
-    .reviews .review h5 {
-      font-weight: 400;
-      color: #888888; }
-      .reviews .review h5 span {
-        color: #c15223;
-        font-weight: 600; }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .reviews .review .review-content {
+      margin-left: 20px; }
+      .reviews .review .review-content img {
+        display: block;
+        width: 80px; }
+      .reviews .review .review-content p {
+        display: inline-block;
+        font-weight: 400;
+        color: #888888;
+        margin-bottom: 20px; }
+      .reviews .review .review-content h4 {
+        font-weight: 600;
+        color: #444444;
+        font-size: 13px;
+        margin-bottom: 13px; }
+      .reviews .review .review-content h5 {
+        font-weight: 400;
+        color: #888888;
+        font-size: 13px;
+        margin: 0; }
+        .reviews .review .review-content h5 span {
+          color: #c15223;
+          font-weight: 600; }
 
 .pre-footer {
   background-color: #222222;
@@ -235,5 +247,60 @@ header {
   .pre-footer .hours .bold {
     font-weight: 600;
     color: #ffffff; }
+
+footer {
+  background-color: #333333;
+  border: 1px solid #444444;
+  padding: 21px 0 24px; }
+  footer p {
+    color: #fffefe;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin: 0; }
+    @media (max-width: 767px) {
+      footer p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px; } }
+  footer .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  footer ul {
+    margin: 0; }
+    footer ul li {
+      display: inline-block;
+      margin-right: 19px; }
+      @media (max-width: 767px) {
+        footer ul li {
+          text-align: center;
+          display: block;
+          list-style: none;
+          margin-bottom: 5px; } }
+      footer ul li a {
+        text-transform: capitalize;
+        color: #ffffff;
+        font-size: 11px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        position: relative;
+        transition: 0.3s; }
+        footer ul li a:hover {
+          color: darkgray;
+          text-decoration: none; }
+        footer ul li a:after {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 10px;
+          right: -12px;
+          background-color: #444444;
+          position: absolute;
+          top: 4px; }
+        @media (max-width: 767px) {
+          footer ul li a:after {
+            display: none; } }
 
 /*# sourceMappingURL=style.css.map */
